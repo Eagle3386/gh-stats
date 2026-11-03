@@ -30,9 +30,9 @@ jobs:
         zig build
 
     - name: Checkout history branch
-      run: |
-        git config --global user.name "jstrieb/github-stats"
-        git config --global user.email "github-stats[bot]@jstrieb.github.io"
+      run: # TODO: Confirm working with own git credentials |
+        # git config --global user.name "jstrieb/github-stats"
+        # git config --global user.email "github-stats[bot]@jstrieb.github.io"
         # Push generated files to the generated branch
         git pull
         git checkout generated || git checkout -b generated
