@@ -31,7 +31,7 @@ jobs:
 
     - name: Checkout history branch
       run: |
-        # git config --global user.name "jstrieb/github-stats"
+        git config --global user.name "Eagle3386"
         git config --global user.email "5111490+Eagle3386@users.noreply.github.com"
         # Push generated files to the generated branch
         git pull
